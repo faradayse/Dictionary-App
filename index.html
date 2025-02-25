@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevor's Dictionary App</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 600px; 
+            margin: 20px auto; 
+            padding: 0 10px; 
+        }
+        h1 { color: #333; }
+        input, button { 
+            padding: 8px; 
+            margin: 5px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+        }
+        button { 
+            background-color: #007bff; 
+            color: white; 
+            cursor: pointer; 
+        }
+        button:hover { background-color: #0056b3; }
+        #definition { 
+            margin-top: 20px; 
+            padding: 15px; 
+            background: #f9f9f9; 
+            border-radius: 4px; 
+        }
+        #recent-searches { 
+            margin-top: 20px; 
+            font-style: italic; 
+            color: #666; 
+        }
+        audio { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>TREVOR's Dictionary App</h1>
+    <div>
+        <input type="text" id="word-input" placeholder="Enter a word">
+        <button onclick="searchWord()">Search</button>
+    </div>
+    <div id="definition"></div>
+    <div id="recent-searches">Recent Searches: None</div>
+    <button onclick="clearRecentSearches()">Clear History</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
