@@ -28,3 +28,6 @@ A simple web-based dictionary app built with JavaScript, HTML, and CSS. It fetch
 
 ## License
 MIT License
+
+## Live Demo
+https://faradayse.github.io/Dictionary-App/
